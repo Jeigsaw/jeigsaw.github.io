@@ -3,34 +3,37 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="official portfolio of Jeigsaw ">
+        <meta name="description" content="Portfolio of Jeigsaw">
         <meta name="author" content="Jeigsaw">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" src="style.css">
         <link rel="icon" href="assets/icon.png">
-
         <title>Jeigsaw</title>		
+
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js"></script>
     </head>
-    <body style="
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: stretch;
-    font-family: system-ui;">
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_XpqDudg2Vy.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-        
-        <section>
-            <h3>Hi!</h3>
-        <p>The site is under construction.</p>
-        <p>In the meantime, you can browse my works below</p>
-        <div style="display: flex; flex-direction: row; gap: 10px">
-            <div><a href="https://github.com/Jeigsaw">Github</a></div>
-            <div><a href="https://codepen.io/jeigsaw">Codepen</a></div>
-            <div><a href="https://instagram.com/jeigsaw">Instagram</a></div>
+    <body>
+
+        <div x-data="{ title: 'Start Here' }">
+            <h1 x-text="title"></h1>
+            <h2>Hi!</h2>
+
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewBox="0 0 2188 2187" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;"><path d="M1489.01,339.278l-208.986,-215.761c-80.55,-83.161 -213.463,-85.281 -296.623,-4.731l-236.831,229.395c44.022,14.913 85.221,40.216 119.742,75.856c115.997,119.757 112.944,311.159 -6.813,427.156c-119.757,115.997 -311.159,112.944 -427.156,-6.813c-34.52,-35.639 -58.497,-77.624 -71.998,-122.1l-236.831,229.395c-83.161,80.55 -85.281,213.462 -4.731,296.623l789.013,814.588c80.549,83.161 213.462,85.281 296.623,4.731l859.886,-832.889c83.161,-80.55 85.281,-213.462 4.731,-296.623l-222.552,-229.766c53.085,-11.548 103.709,-37.551 145.576,-78.103c119.756,-115.997 122.809,-307.399 6.812,-427.156c-115.997,-119.757 -307.399,-122.81 -427.156,-6.813c-41.867,40.553 -69.47,90.321 -82.706,143.011Z" style="fill:none;stroke:#e6be81;stroke-width:119.47px;"/></svg>
+            </div>
+
+            
+            <div>
+                <h3>I am Jeigsaw.</h3>
+                <h3>I make stuffs.</h3>
+            </div>
         </div>
-        </section>
+
         
 
 
+
+
+        <script type="module" src="/main.js"></script>
     </body>
 </html>
