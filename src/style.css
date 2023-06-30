@@ -1,4 +1,5 @@
 @import url('./css/global.css');
+@import url('./css/home.css');
 @import url('/src/css/contact.css');
 a {
   font-weight: 500;
@@ -32,58 +33,10 @@ body, h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
 
-.icon{
-  max-width: 14rem;
-  animation: jello;
-  animation-duration: 2s;
-}
-
-.home{
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255, 255, 255, 0.87);
-  background: rgb(136,129,163);
-  background: linear-gradient(0deg, rgba(136,129,163,1) 0%, rgba(88,136,127,1) 100%);
-}
-
-.intro{
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-  align-items: center;
-  margin-top: -2rem;
-  text-align: center;
-}
 
 h2, h3{
   font-size: 1.6rem;
   letter-spacing: 0.08rem;
-}
-
-.introText{
-  display: flex;
-  flex-direction: column;
-  gap: 1.4rem;
-}
-
-.dimText{
-  color: #ffffff88;
-}
-
-.downArrow{
-  position: absolute;
-  bottom: 2rem;
-  animation: bounce;
-  animation-delay: 3s;
-  animation-duration: 2s;
-}
-
-.downArrow:hover{
-  transform: translateY(0.2rem);
-  transition: transform 0.2s ease-out;
 }
 
 .displays{
