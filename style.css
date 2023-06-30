@@ -43,18 +43,12 @@
   background-color: transparent;
 }
 
-body, h1,h2,h3,h4,h5,h6{
-  margin: 0;
+img{
+  width: 100%;
 }
 
-
-main{
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255, 255, 255, 0.87);
+body, h1,h2,h3,h4,h5,h6{
+  margin: 0;
 }
 
 .icon{
@@ -64,6 +58,12 @@ main{
 }
 
 main.home{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.87);
   background: rgb(136,129,163);
   background: linear-gradient(0deg, rgba(136,129,163,1) 0%, rgba(88,136,127,1) 100%);
 }
@@ -77,12 +77,8 @@ main.home{
   text-align: center;
 }
 
-.intro h2{
+h2, h3{
   font-size: 1.6rem;
-}
-
-.intro h3{
-  font-size: 1.5rem;
   letter-spacing: 0.08rem;
 }
 
@@ -111,10 +107,30 @@ main.home{
 
 .displays{
   min-height: 100vh;
+  padding: 2rem 0;
   background: rgb(69,98,93);
   background: linear-gradient(135deg, rgba(69,98,93,1) 0%, rgba(74,98,105,1) 100%);
 }
 
+.displays h3{
+  color: rgba(255, 255, 255, 0.87);
+  text-align: center;
+}
+
+.stuffGallery{
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+.stuffCard{
+  text-align: center;
+}
+
+.stuffCard img{
+  --tiltAngle: 3deg;
+  max-width: 12rem;
+  rotate: var(--tiltAngle);
+}
 
 @media (prefers-color-scheme: light) {
   :root {
