@@ -1,0 +1,70 @@
+:root {
+    font-family: 'Gabriela', serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+*::selection{
+    background-color: #9aa09e50;
+    color: #e3e7e5;
+}
+  
+
+
+
+  
+/* scrollbars */
+*::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+  
+*::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background: transparent;
+}
+  
+*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(202, 214, 211, 0.71);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+  
+
+
+/* Dark theming */
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .smHide{
+        display: none;
+    }
+}
+  
+@media screen and (min-width: 769px) {
+    .lgHide{
+        display: none;
+    }
+}

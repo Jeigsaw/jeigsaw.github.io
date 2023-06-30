@@ -1,0 +1,15 @@
+.contacts{
+    background: rgb(69,98,93);
+    background: linear-gradient(135deg, rgba(69,98,93,1) 0%, rgba(74,98,105,1) 100%);
+    padding: 1rem;
+    text-align: center;
+    color: rgb(228, 246, 243);
+}
+
+.contacts ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
