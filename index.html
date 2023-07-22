@@ -12,11 +12,11 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Ysabeau+Infant:wght@100;400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./src/style.css">
-  <link rel="icon" href="/public/vite.svg">
+  <link rel="icon" href="/vite.svg">
 
   <title>Jeigsaw</title>
 </head>
@@ -56,7 +56,7 @@
     <h2>Stuffs I made</h2>
 
     <div class="filterGroup">
-      <button class="filterBtn" data-filter=" " onclick="filterGallery(event)">All</button>
+      <button class="filterBtn activeFilter" data-filter=" " onclick="filterGallery(event)">All</button>
       <template x-for="category in $store.stuffs.categories">
         <button class="filterBtn" x-text="category" :data-filter="category" onclick="filterGallery(event)"></button>
       </template>
@@ -65,9 +65,9 @@
     <div class="stuffGallery" >
 
       <template x-for="stuff in $store.stuffs.data">
-        <a class="stuffCard" :href="stuff.link" :data-category="stuff.category" target="_blank">
+        <a class="stuffCard animate__animated animate__fadeInDown" :href="stuff.link" :data-category="stuff.category" target="_blank">
           <h4 x-text="stuff.name"></h4>
-          <h5 x-text="stuff.desc"></h5>
+          <p x-text="stuff.desc"></p>
         </a>
         
       </template>

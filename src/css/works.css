@@ -1,8 +1,9 @@
 .displays {
     min-height: 100vh;
-    padding: 2rem 0;
-    background: rgb(136, 129, 163);
-    background: linear-gradient(180deg, rgba(136, 129, 163, 1) 0%, rgba(88, 136, 127, 1) 100%);
+    padding-top: 2rem;
+    padding-bottom: 0.1rem;
+    background: rgb(88, 136, 127);
+    /* background: linear-gradient(180deg, rgba(136, 129, 163, 1) 0%, rgba(88, 136, 127, 1) 100%); */
 }
 
 .displays > h2 {
@@ -20,10 +21,11 @@
     margin: 1.5rem 0;
 }
 .filterBtn{
-    padding: 0.5rem 1rem;
+    font-family: 'Ysabeau Infant', sans-serif;
+    padding: 0.46rem 1rem;
     border-radius: 1rem;
     background-color: transparent;
-    border: 1px solid #ccc;
+    border: 1px solid #dbcecc;
     cursor: pointer;
     color: aliceblue;
     transition: all 0.2s ease-in;
@@ -39,7 +41,7 @@
 }
 
 .stuffGallery {
-    max-width: 90vw;
+    max-width: 80vw;
     margin: 1rem auto;
     padding: 1rem;
     display: flex;
@@ -49,10 +51,16 @@
 
 .stuffCard {
     padding: 1rem 2rem;
-    border: 1px solid #cccccc;
-    border-radius: 2rem;
+    border: 1px solid #8ca5a0;
+    border-radius: 1rem;
     color: aliceblue;
     transition: all 0.2s ease-in;
+}
+
+.stuffCard p{
+    margin: 0;
+    margin-top: 0.5rem;
+    color: #e3f3f0;
 }
 
 .stuffCard:hover{
@@ -64,4 +72,10 @@
     --tiltAngle: 3deg;
     max-width: 12rem;
     rotate: var(--tiltAngle);
+}
+
+@media screen and (max-width: 768px) {
+    .stuffGallery{
+        max-width: 100%;
+    }
 }

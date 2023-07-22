@@ -1,5 +1,5 @@
 :root {
-    font-family: 'Gabriela', serif;
+    font-family: 'Ysabeau Infant', sans-serif;
     line-height: 1.5;
     font-weight: 400;
 
@@ -76,7 +76,6 @@ img {
     width: 100%;
 }
 
-body,
 h1,
 h2,
 h3,
@@ -84,6 +83,8 @@ h4,
 h5,
 h6 {
     margin: 0;
+    font-family: 'Gabriela', serif;
+
 }
 
 
