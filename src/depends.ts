@@ -100,14 +100,15 @@ Alpine.start();
 // filtering stuffs
 export const filterGallery = (e:Event):void => {
   const filterBtns = document.querySelectorAll('.filterBtn');
-  const selectedCategory = e.target.dataset.filter;
+  const target = e.target as HTMLButtonElement;
+  const selectedCategory = target.dataset.filter;
   const galleryItems = document.querySelectorAll('.stuffCard');
 
   filterBtns.forEach(btn => {
     btn.classList.remove('activeFilter');
   });
 
-  e.target.classList.add('activeFilter');
+  target.classList.add('activeFilter');
 
 
   galleryItems.forEach(item => {
@@ -117,7 +118,8 @@ export const filterGallery = (e:Event):void => {
       item.classList.remove('hidden');
     }
 
-    const category = item.dataset.category;
+    const el = item as HTMLElement;
+    const category = el.dataset.category;
     if (category == selectedCategory) {
       item.classList.remove('hidden');
     }
