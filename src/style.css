@@ -1,75 +1,10 @@
-@import url('./css/global.css');
-@import url('./css/home.css');
-@import url('/src/css/contact.css');
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+@import url("/src/css/global.css");
+@import url("/src/css/home.css");
+@import url("/src/css/works.css");
+@import url("/src/css/contact.css");
 
 
 
 
 
 
-
-img{
-  width: 100%;
-}
-
-body, h1,h2,h3,h4,h5,h6{
-  margin: 0;
-}
-
-
-h2, h3{
-  font-size: 1.6rem;
-  letter-spacing: 0.08rem;
-}
-
-.displays{
-  min-height: 100vh;
-  padding: 2rem 0;
-  background: rgb(136,129,163);
-  background: linear-gradient(180deg, rgba(136,129,163,1) 0%, rgba(88,136,127,1) 100%);
-}
-
-.displays h3{
-  color: rgba(255, 255, 255, 0.87);
-  text-align: center;
-}
-
-.stuffGallery{
-  margin: 2rem 0;
-  padding: 1rem;
-}
-
-.stuffCard{
-  text-align: center;
-}
-
-.stuffCard img{
-  --tiltAngle: 3deg;
-  max-width: 12rem;
-  rotate: var(--tiltAngle);
-}
-
-
-
-@media screen and (max-width: 768px) {
-  .intro{
-    margin-top: 0;
-  }
-}

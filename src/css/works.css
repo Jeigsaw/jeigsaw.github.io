@@ -1,0 +1,67 @@
+.displays {
+    min-height: 100vh;
+    padding: 2rem 0;
+    background: rgb(136, 129, 163);
+    background: linear-gradient(180deg, rgba(136, 129, 163, 1) 0%, rgba(88, 136, 127, 1) 100%);
+}
+
+.displays > h2 {
+    color: rgba(255, 255, 255, 0.87);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.filterGroup{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+.filterBtn{
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: aliceblue;
+    transition: all 0.2s ease-in;
+}
+.filterBtn:hover{
+    border-color: salmon;
+    background-color: salmon;
+}
+
+.activeFilter{
+    border-color: salmon;
+    background-color: salmon;
+}
+
+.stuffGallery {
+    max-width: 90vw;
+    margin: 1rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.stuffCard {
+    padding: 1rem 2rem;
+    border: 1px solid #cccccc;
+    border-radius: 2rem;
+    color: aliceblue;
+    transition: all 0.2s ease-in;
+}
+
+.stuffCard:hover{
+    border-color: salmon;
+    color: aliceblue;
+}
+
+.stuffCard img {
+    --tiltAngle: 3deg;
+    max-width: 12rem;
+    rotate: var(--tiltAngle);
+}

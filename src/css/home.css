@@ -51,3 +51,9 @@
     transform: translateY(0.2rem);
     transition: transform 0.2s ease-out;
 }
+
+@media screen and (max-width: 768px) {
+    .intro{
+      margin-top: 0;
+    }
+}
