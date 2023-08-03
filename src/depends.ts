@@ -3,7 +3,7 @@ import Alpine from 'alpinejs';
 
 // Global store
 Alpine.store('stuffs', {
-  categories: ['Web Design', 'Web Development','Simulation', 'Music', 'Visual Arts'],
+  categories: ['Web Design', 'Web Development','Theme/Plugin','Simulation', 'Music', 'Visual Arts'],
 
   data: [
     {
@@ -31,7 +31,7 @@ Alpine.store('stuffs', {
       id: 9,
       name: 'Skewuy',
       desc: 'A CSS library to implement 3D rotation effect with 2D images',
-      category: 'Web Design',
+      category: 'Theme/Plugin',
       link: 'https://jeigsaw.github.io/Skewuy/',
     },
     {
@@ -40,6 +40,13 @@ Alpine.store('stuffs', {
       desc: 'News Portal of PMS Multimedia Pvt. Ltd.',
       category: 'Web Development',
       link: 'https://pmsnewsnepal.com',
+    },
+    {
+      id: 12,
+      name: 'Olive Dark Theme',
+      desc: 'A dark theme with olive accent color for a popular text editor VS Code',
+      category: 'Theme/Plugin',
+      link: 'https://marketplace.visualstudio.com/items?itemName=Jeigsaw.olive-dark-theme',
     },
     {
       id: 3,
