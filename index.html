@@ -71,7 +71,7 @@
     <div class="stuffGallery" >
 
       <template x-for="stuff in $store.stuffs.data">
-        <a class="stuffCard animate__animated animate__fadeInDown" :href="stuff.link" :data-category="stuff.category" target="_blank">
+        <a class="stuffCard animate__animated animate__fadeInUp" :href="stuff.link" :data-category="stuff.category" target="_blank">
           <h4 x-text="stuff.name"></h4>
           <p x-text="stuff.desc"></p>
         </a>
