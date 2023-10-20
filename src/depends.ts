@@ -50,10 +50,10 @@ Alpine.store('stuffs', {
     },
     {
       id: 6,
-      name: 'Chitiboard',
-      desc: 'Website Design and Prototyping for Chitiboard Cooperatives',
+      name: 'Hotel Manaslu',
+      desc: 'Hotel Manaslu website',
       category: 'Web Dev',
-      link: 'https://www.figma.com/file/IzId3gUuxc1KBabRmqTZ5s/chitiboard-design-system?type=design&node-id=25%3A3823&mode=design&t=cDyuh1M1GC8ucdaV-1',
+      link: 'https://hotelmanaslu.com/',
     },
     {
       id: 7,
@@ -99,10 +99,10 @@ Alpine.store('stuffs', {
     },
     {
       id: 13,
-      name: 'Hotel Manaslu',
-      desc: 'Hotel Manaslu website',
+      name: 'Hotel Ratnasambhava',
+      desc: 'Hotel Ratnasambhava website',
       category: 'Web Dev',
-      link: 'https://hotelmanaslu.com/',
+      link: 'https://hotelratnasambhava.com/',
     },
     {
       id: 14,
